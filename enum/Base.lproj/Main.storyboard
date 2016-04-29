@@ -16,11 +16,84 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qeF-do-urc">
+                                <rect key="frame" x="232" y="78" width="82" height="396"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5g-Bu-MiO">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="C7g-Xa-k60"/>
+                                            <constraint firstAttribute="height" constant="84" id="xED-3v-Hkh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Icone"/>
+                                        <connections>
+                                            <action selector="OnBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mtg-4Q-KJz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9O-jN-cTM">
+                                        <rect key="frame" x="0.0" y="104" width="82" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="KPw-QK-kNJ"/>
+                                            <constraint firstAttribute="height" constant="84" id="v3T-LJ-gBG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="MLP-my-little-pony-friendship-is-magic-27385971-167-200"/>
+                                        <connections>
+                                            <action selector="OnBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7r-9Q-DaG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bni-X4-dRQ">
+                                        <rect key="frame" x="0.0" y="208" width="82" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="AVB-a6-DCY"/>
+                                            <constraint firstAttribute="height" constant="84" id="wF4-Tj-6Rf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Icon-Dump-my-little-pony-friendship-is-magic-31070806-200-200"/>
+                                        <connections>
+                                            <action selector="OnBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mDp-sb-mXG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtE-Op-mON">
+                                        <rect key="frame" x="0.0" y="312" width="82" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="UY3-UU-m1k"/>
+                                            <constraint firstAttribute="height" constant="84" id="lQe-RG-hFM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="My-Little-Pony-Friendship-is-Magic-image-my-little-pony-friendship-is-magic-36372627-504-495"/>
+                                        <connections>
+                                            <action selector="OnBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5pt-mN-BpY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAe-K1-Axu">
+                                <rect key="frame" x="162" y="492" width="222" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qeF-do-urc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4gn-59-B5U"/>
+                            <constraint firstItem="qeF-do-urc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SKx-TH-nOe"/>
+                            <constraint firstItem="QAe-K1-Axu" firstAttribute="top" secondItem="qeF-do-urc" secondAttribute="bottom" constant="18" id="UQu-Ul-uZG"/>
+                            <constraint firstItem="QAe-K1-Axu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r5s-vj-z9x"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Label" destination="QAe-K1-Axu" id="n5c-pG-Q46"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon-Dump-my-little-pony-friendship-is-magic-31070806-200-200" width="200" height="200"/>
+        <image name="Icone" width="300" height="300"/>
+        <image name="MLP-my-little-pony-friendship-is-magic-27385971-167-200" width="167" height="200"/>
+        <image name="My-Little-Pony-Friendship-is-Magic-image-my-little-pony-friendship-is-magic-36372627-504-495" width="504" height="495"/>
+    </resources>
 </document>

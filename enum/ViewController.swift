@@ -9,6 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var Label: UILabel!
+    enum Cars: Int {
+        
+        case Lune = 0
+        case Cup = 1
+        case Poney = 2
+        case Unicorn = 3
+        
+        
+        
+    }
+    var carOfChoice: Cars!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +31,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        //2
+       
         
     }
 
+    @IBAction func OnBtnTapped(sender: AnyObject) {
+    }
 
 }
 
